@@ -14,6 +14,8 @@ const ControllBar = ({
   currentPosition,
   onSlide,
   onChangeSpeed,
+  onFullscreen,
+  fullscreen,
 }) => {
   return (
     <Styles.Container>
@@ -32,7 +34,8 @@ const ControllBar = ({
 
       <Styles.RightBlock>
         <SpeedButton onChangeSpeed={onChangeSpeed} />
-        <FullscreenButton />
+
+        <FullscreenButton onPress={onFullscreen} fullscreen={fullscreen} />
       </Styles.RightBlock>
     </Styles.Container>
   );

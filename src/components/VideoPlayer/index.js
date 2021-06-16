@@ -41,7 +41,7 @@ const VideoPlayer = () => {
         paused={paused}
         ref={playerRef}
         source={{
-          uri: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4',
+          uri: 'https://player.vimeo.com/external/508896480.m3u8?s=e6b2599abce2801965869e8b07c27d0c423add2e',
         }}
         style={{
           width: viewportWidth,

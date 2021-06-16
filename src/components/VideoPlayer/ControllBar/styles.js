@@ -20,7 +20,6 @@ export const MiddleBlock = styled.View`
 `;
 
 export const RightBlock = styled.View`
-  position: relative;
   flex-direction: row;
   align-items: center;
 `;

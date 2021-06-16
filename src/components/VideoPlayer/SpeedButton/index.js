@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import {Text} from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
 import * as Styles from './styles';
@@ -25,13 +24,13 @@ const SpeedButton = ({onChangeSpeed}) => {
       {showSelector && (
         <Styles.SelectorContainer>
           <Styles.SelectorButton onPress={() => handleSpeedSelect(0.5)}>
-            <Text>0.5x</Text>
+            <Styles.SelectorButtonText>0.5x</Styles.SelectorButtonText>
           </Styles.SelectorButton>
           <Styles.SelectorButton onPress={() => handleSpeedSelect(1)}>
-            <Text>1.0x</Text>
+            <Styles.SelectorButtonText>1.0x</Styles.SelectorButtonText>
           </Styles.SelectorButton>
           <Styles.SelectorButton onPress={() => handleSpeedSelect(2)}>
-            <Text>2.0x</Text>
+            <Styles.SelectorButtonText>2.0x</Styles.SelectorButtonText>
           </Styles.SelectorButton>
         </Styles.SelectorContainer>
       )}
